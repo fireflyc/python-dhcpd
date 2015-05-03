@@ -168,8 +168,7 @@ class DHCPacket:
                 LOGGER.debug(" option %d: '%s', size:%d %s" % \
                              (tag, option, length, util.hexline(value)))
             except KeyError:
-                LOGGER.error('  unknown option %d, size:%d %s:' % \
-                             (tag, length, util.hexline(value)))
+                LOGGER.error("unknown option %d, size:%d %s:", tag, length, util.hexline(value))
                 return None
             dhcp_tags[tag] = value
 

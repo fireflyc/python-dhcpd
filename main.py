@@ -1,6 +1,9 @@
 # encoding=utf8
-
+import logging
 from server import DHCPServer
+
+
+logging.basicConfig(level=logging.INFO)
 
 __author__ = 'fireflyc'
 
